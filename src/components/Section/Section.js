@@ -37,7 +37,7 @@ const Section = ({images, submitted, loading, plusPage}) => {
             <Container >
                 <CardsWrap>
                     { loading ? <Loader /> : <>{images.length ? images.map(item => <Card key={item.id} item={item}/>) : <Empty submitted={submitted}/>} </>}
-                    {images.length === 25 ? <Pagination plusPage={plusPage} scrollTo={scrollTo}/> : null}
+                    {!loading ? <>{images.length === 25 ? <Pagination plusPage={plusPage} scrollTo={scrollTo}/> : null}</> : null}
                 </CardsWrap>
             </Container>
         </section>
