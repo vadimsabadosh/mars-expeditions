@@ -1,0 +1,79 @@
+.filter {
+    width: 100%;
+    margin-right: 5%;
+    background-color: #454545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.rover-select, .camera-select, .sol-select{
+    position: relative;
+    width: 20%;
+    
+}
+.rover-select::before{
+    position: absolute;
+    content:'Rover:';
+    font-size: 14px;
+    color:rgb(163, 163, 163);
+    top:-20px;
+    left:0;
+    width: 100px;
+    height: 16px;
+}
+.camera-select::before{
+    position: absolute;
+    content:'Camera:';
+    font-size: 14px;
+    color:rgb(163, 163, 163);
+    top:-20px;
+    left:0;
+    width: 100px;
+    height: 16px;
+}
+.sol-select::before{
+    position: absolute;
+    content:'Sol:';
+    font-size: 14px;
+    color:rgb(163, 163, 163);
+    top:-20px;
+    left:0;
+    width: 100px;
+    height: 16px;
+}
+.btn-submit {
+    width: 20%;
+    
+    background-color: #ffad1a;
+    color: #1c1c1c;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media screen and (max-width: 639px){
+    .rover-select, .camera-select, .sol-select{
+        position: relative;
+        width: 45%;
+    }
+    .filter {
+        width: 100%;
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+    .input{
+        margin-bottom: 0px;
+
+    }
+    .btn-submit {
+        width: 45%;
+        margin-right: 0;
+
+    }
+}
